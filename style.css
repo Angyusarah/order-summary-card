@@ -1,0 +1,173 @@
+:root{
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: rgb(56, 41, 224);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Paleblue);
+    max-height: 100vh;
+    font-weight: 500;
+}
+
+.main{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 3em;
+   
+}
+
+.card{
+    width: 50%;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    border-radius: 1.25em 1.25em 0 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.text{
+    background-color: var(--Verypaleblue);
+    text-align: center;
+    padding: 2em;
+    border-radius: 0 0 1.25em 1.25em;
+    margin-top: 0;
+}
+
+h1{
+    font-weight: 900;
+}
+
+p{
+    opacity: 0.4;
+    font-size: 1.2em;
+    margin-block: 1em;
+}
+
+ul{
+    list-style: none;
+    background-color: var(--Paleblue);
+    border: none;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5em;
+    gap: 1em;
+    margin-block: 3em;
+}
+
+h2, li p{
+    font-size: 1em;
+    line-height: 5px;
+}
+a{
+   margin-left: 200px;
+    color: var(--Brightblue);
+    font-weight: 700;
+}
+
+a:hover{
+    color: rgba(56, 41, 224, 0.7);
+}
+
+button{
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue);
+    border: none;
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 0.8em;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+button:hover{
+    background-color: rgba(56, 41, 224, 0.7);
+    cursor: pointer;
+}
+
+.last:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .main{
+        padding: 3em 1em;
+    }
+
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+
+    .text{
+        padding: 4em 3em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    ul{
+        padding: 1em;
+        gap: 1em;
+    }
+    
+    h2, li p{
+        font-size: 0.8em;
+    }
+    a{
+       margin-left: 40px;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .main{
+        padding: 3em 3em;
+    }
+
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+
+    .text{
+        padding: 4em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+
+    ul{
+        padding: 1em;
+        gap: 1em;
+    }
+    
+    h2, li p{
+        font-size: 1em;
+    }
+    a{
+       margin-left: 300px;
+    }
+    
+}
